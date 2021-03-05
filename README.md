@@ -23,6 +23,7 @@ sudo sysctl -w net.core.wmem_max=26214400
 
 ### ffmpeg 
 
+```
    "outputUrl":"udp://239.1.70.50:1234?localaddr=10.111.112.112&ttl=128&pkt_size=1316&fifo_size=1000000&overrun_nonfatal=1&buffer_size=26214400",
 {
    "debug": true,
@@ -32,21 +33,18 @@ sudo sysctl -w net.core.wmem_max=26214400
    "inputOptions":[
       "-re",
       "-v","verbose",
-### nefunguje na novych ffmpeg - obsolete
       "-stream_loop","-1"
    ],
    "outputOptions":[
       "-c:v","copy",
       "-c:a","copy",
-### optional      
       "-maxrate","8000k",
-### optional      
       "-bufsize","16000k",
       "-metadata","service_provider=\"RSNET\"",
       "-metadata","service_name=\"WTCR-League\"",
       "-f","mpegts"
    ]
-
+```
 
 ### TODO ###
 tu toho este bude ;)
