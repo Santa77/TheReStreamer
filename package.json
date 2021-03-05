@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fbvideos": "^1.0.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "nconf": "^0.11.2",
+    "twitch-m3u8": "^1.1.4",
+    "ytdl-core": "^4.5.0"
+  }
+}

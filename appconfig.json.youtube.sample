@@ -1,0 +1,30 @@
+{
+   "debug":false,
+   "FFMPEG_PATH":"D:/ffmpeg-20190529-d903c09-win64-static/bin/ffmpeg.exe",
+   "input":{
+      "type":"youtube",
+      "streamId":"21X5lGlDOfg",
+      "inputOptions":[
+         "-re",
+         "-v",
+         "verbose",
+         "-stream_loop",
+         "-1"
+      ]
+   },
+   "output":{
+      "outputUrl":"udp://239.101.101.1:1234?ttl=1&pkt_size=1316",
+      "outputOptions":[
+         "-c:v",
+         "copy",
+         "-c:a",
+         "copy",
+         "-metadata",
+         "service_provider=\"RSNET\"",
+         "-metadata",
+         "service_name=\"WTCR-League\"",
+         "-f",
+         "mpegts"
+      ]
+   }
+}

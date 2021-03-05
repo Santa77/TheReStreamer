@@ -1,0 +1,29 @@
+{
+   "debug":true,
+   "FFMPEG_PATH":"/usr/bin/ffmpeg",
+   "input":{
+      "type":"youtube",
+      "streamId":"lDG08agYkyg",
+      "inputOptions":[
+         "-v",
+         "verbose",
+	 "-analyzeduration",
+         "1000000000",
+         "-probesize",
+	 "1000000000"
+      ]
+   },
+   "output":{
+      "outputUrl":"video.mp4",
+      "outputOptions":[
+         "-c:v",
+         "copy",
+         "-c:a",
+         "copy",
+         "-metadata",
+         "service_provider=\"RSNET\"",
+         "-metadata",
+         "service_name=\"WTCR-League\""
+      ]
+   }
+}
