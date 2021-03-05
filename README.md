@@ -4,13 +4,15 @@
  * nodejs
 
 ### install
-``git clone http://git.rsnet.sk:3000/RSNET/TwitchGrab``
-``npm install``
+```
+git clone http://git.rsnet.sk:3000/RSNET/TwitchGrab
+npm install
+```
 
 ### prepare
 
-editacia parametrov v appconfig.json
-**streamId** z url Napriklad z: https://www.twitch.tv/videos/**905126438**
+editacia parametrov v appconfig.json **streamId** z url Napriklad z: https://www.twitch.tv/videos/905126438
+
 
 ### run
 ``node trs.js``
@@ -18,8 +20,10 @@ editacia parametrov v appconfig.json
 ### Stream Tweak
 
 ### linux specific buffers optimization
+```
 sudo sysctl -w net.core.rmem_max=26214400
 sudo sysctl -w net.core.wmem_max=26214400
+```
 
 ### ffmpeg 
 
